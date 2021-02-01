@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #2F3035;
+}
+button:active, button:focus {
+  outline: none !important;
+  border: 0;
+}
+button::-moz-focus-inner {
+  border: 0 !important;
+}
+button:active{
+  box-shadow: 0 0 10px #fff;
+}
+.wrapper{
+  height: 100%;
+  width: 100%;
+}
+.flexForBtn{
+  display: flex;
+  justify-content: flex-end;
+}
+.close{
+  margin-right: 10px;
+  font-size: 28px;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  color: #eee;
+  font-size: 22px;
+  background: #454C9D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  box-shadow: 0 0 10px #fff;
+
+}
+.red {
+  box-shadow: 0 0 10px #ff0000;
+}
+
+.redText{
+  color: rgba(255, 0, 0, 0.6);
+  font-size: 12px;
+}
+.alertHeight{
+  height: 18px;
+  display: flex;
+  align-items: flex-start;
+}
+.plusBtn{
+  height: 32px;
+}
+.plus{
+  display: block;
+  width: 20px;
+  height: 4px;
+  background: #eee;
+}
+.plus:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 4px;
+  background: #eee;
+  transform: rotate(90deg);
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s;
+
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+}
+#vue-app{
+  position: relative;
+}
+.addModal{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  z-index: 5;
+  background: #474853;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.my-btn{
+  width: 100%;
+  border: 0;
+}
+.my-block{
+  width: 100%;
+  height: 80px;
+  outline: none;
+  background: #454C9D;
+  border: solid 1px #353853;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.my-block img{
+  height: 50px;
+  width: auto;
+}
+.image img{
+  display: block;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 0;
+}
+.arrow{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.left{
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+.left p{
+  margin-left: 60px;
+}
+
+.image{
+  position: relative;
+  height: 100%;
+  width: 10%;
+}
+.name{
+  align-self: flex-end;
+  font-size: 25px;
+  color: #eee;
+}
+.my-block img{
+  height: 50px;
+  width: auto;
+}
+.image img{
+  display: block;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 0;
+}
